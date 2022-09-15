@@ -1,0 +1,143 @@
+:root {    
+    --white-color: hsl(0, 0%, 100%);
+    --light-grey-color: hsl(217, 12%, 63%);
+    --Orange-color: hsl(25, 97%, 53%);
+    --Medium-Grey-color: hsl(216, 12%, 54%, 0.205);
+    --Dark-Blue-color: hsl(213, 19%, 18%);
+    --Very-Dark-Blue-color: hsl(216, 12%, 8%);
+    --Font-size-p: 0.919em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: "Overpass", sans-serif;
+    background-color: var(--Very-Dark-Blue-color);
+}
+
+p {
+    font-size: var(--Font-size-p);
+    line-height: 1.7em;
+  margin-top: 0;
+  
+}
+p, .input-numbers{
+    color: var(--light-grey-color);
+}
+.input-numbers{
+    display: flex;
+  justify-content: space-between;
+  margin: 1.7em 0;
+  font-weight: bold;
+}
+.circle-box{
+    background-color: var(--Medium-Grey-color);
+  border-radius: 50%;
+  padding: 1em;
+}
+.input{
+    background-color: var(--Medium-Grey-color);
+  border-radius: 50%;
+  padding: 0.8em 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+}
+.input:hover{
+    background-color: var(--light-grey-color);
+    color: var(--white-color);
+}
+.input:active{
+    background-color: var(--Orange-color);
+    color: var(--white-color);
+}
+.select {
+  background-color: var(--light-grey-color);
+  color: var(--white-color);
+}
+
+h1{
+    margin-bottom: 0.5em;
+    color: var(--white-color);
+    font-size: 1.6rem;
+}
+
+.start-rating, .end-rating {
+    background-color: var(--Dark-Blue-color);
+  width: 90%;
+  padding: 1.5em;
+  border-radius: 1.5em;
+  margin: 2em auto;
+
+}
+
+.start-rating button {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--white-color);
+    background-color: var(--Orange-color);
+    border: none;
+    width: 100%;
+    padding: 1em;
+    border-radius: 2em;
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
+  }
+  .start-rating button:active {
+    background-color: var(--white-color);
+    color: var(--Orange-color);
+  }
+  
+  .start-rating button:hover {
+    cursor: pointer;
+  }
+
+input[type=radio]{
+    display: none;
+}
+.end-rating{
+    display: none;
+    text-align: center;
+}
+
+.end-rating img{
+  margin: 1.2em;
+}
+.rating {
+  background-color: var(--Medium-Grey-color);
+  color: var(--Orange-color);
+  border-radius: 1em;
+  padding: 0.4em 1.3em;
+  display: inline-block;
+  margin-bottom: 0.7em;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media all and (min-width: 500px) {
+  main {
+    padding: 1.9em;
+    width: 400px;
+  }
+}
+
+
+
