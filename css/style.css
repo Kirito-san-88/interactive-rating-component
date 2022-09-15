@@ -126,10 +126,11 @@ input[type=radio]{
 .attribution {
     font-size: 11px;
     text-align: center;
+    color: var(--white-color);
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(228, 52%, 80%);
 }
 
 @media all and (min-width: 500px) {
