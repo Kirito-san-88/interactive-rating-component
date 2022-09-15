@@ -10,10 +10,12 @@ document.addEventListener("DOMContentLoaded", () => {
         inputRating[i].addEventListener('click', () => {
             let rating = inputRating[i].innerHTML;
 
-            for (let i = 0; i < inputRating.length; i++) {
-                inputRating[i].classList.contains("select");
-               inputRating[i].classList.remove("select");
-            }
+            inputRating.forEach(inputRating => {
+                inputRating.classList.contains("select");
+               inputRating.classList.remove("select");
+            });
+                
+            
             inputRating[i].classList.add("select");
 
             button.addEventListener('click', () => {
