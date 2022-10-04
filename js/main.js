@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     let inputRating = document.querySelectorAll(".input"); // get all input
-    let button = document.getElementById("button"); // button submit
+    let buttonSubmit = document.getElementById("button"); // button submit
     let spanRating = document.getElementById("rating"); // span where rating will be displayed
     let endRating = document.querySelector(".end-rating");// for display the thank you card
     let startRating = document.querySelector(".start-rating");
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
             
             inputRating[i].classList.add("select");
 
-            button.addEventListener('click', () => {
+            buttonSubmit.addEventListener('click', () => {
                 startRating.style.display = "none";
                 endRating.style.display = "block";
                 spanRating.innerHTML = rating;
